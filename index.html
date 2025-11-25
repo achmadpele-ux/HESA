@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HESA Engineering Indonesia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+background:#0d1117;
+color:#e6edf3;
+font-family: 'Segoe UI', sans-serif;
+overflow-x:hidden;
+}
+
+header {
+background:#1a1f26;
+padding:20px;
+position:fixed;
+top:0;
+width:100%;
+z-index:1000;
+border-bottom:2px solid #2f5fa8;
+}
+
+header img {height:50px;}
+
+.nav-link {
+color:white;
+margin:0 10px;
+font-weight:600;
+}
+
+.nav-link:hover { color:#2f5fa8; }
+
+.hero {
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+background:radial-gradient(circle at 20% 20%, #2f5fa822 0%, transparent 40%),
+radial-gradient(circle at 80% 80%, #2f5fa822 0%, transparent 40%);
+}
+
+.hero h1 {
+font-size:4rem;
+color:#2f5fa8;
+font-weight:800;
+}
+
+.line {
+width:120px;
+height:4px;
+background:#2f5fa8;
+margin:20px auto;
+}
+
+.section {
+padding:100px 0;
+}
+
+.card-industrial {
+background:#1a1f26;
+border:1px solid #2f5fa8;
+border-radius:20px;
+padding:30px;
+height:100%;
+transition:0.4s;
+}
+
+.card-industrial:hover {
+transform:translateY(-10px);
+box-shadow:0 0 15px #2f5fa8;
+}
+
+/* ⚡ Electric animation */
+.lightning {
+position:absolute;
+width:2px;
+height:200px;
+background:linear-gradient(transparent,#2f5fa8,transparent);
+animation:move 3s linear infinite;
+opacity:0.4;
+}
+
+@keyframes move {
+0%{top:-200px;}
+100%{top:120%;}
+}
+
+/* Floating effect */
+.float {
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+0% { transform: translateY(0);}
+50% { transform: translateY(-15px);}
+100% { transform: translateY(0);}
+}
+
+footer {
+background:#1a1f26;
+text-align:center;
+padding:40px;
+border-top:2px solid #2f5fa8;
+}
+</style>
+</head>
+<body>
+
+<!-- Animasi Listrik -->
+<div class="lightning" style="left:10%"></div>
+<div class="lightning" style="left:35%; animation-delay:1s;"></div>
+<div class="lightning" style="left:70%; animation-delay:2s;"></div>
+
+<header class="d-flex align-items-center justify-content-between px-5">
+<img src="assets/logo-hesa.png">
+<nav>
+<a class="nav-link d-inline" href="#home">Home</a>
+<a class="nav-link d-inline" href="#about">About</a>
+<a class="nav-link d-inline" href="#services">Services</a>
+<a class="nav-link d-inline" href="#projects">Projects</a>
+<a class="nav-link d-inline" href="#contact">Contact</a>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<img src="assets/logo-hesa.png" class="float" width="180">
+<h1 class="mt-4">HESA ENGINEERING</h1>
+<div class="line"></div>
+<p>Power • Automation • Electrical • Maintenance</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="section text-center" id="about">
+<div class="container">
+<h2 class="text-primary">ABOUT US</h2>
+<p class="mt-4">
+HESA Engineering Indonesia bergerak di bidang kelistrikan, pembangkit listrik,
+PLC & Automation, pompa, instrumentasi, desain engineering dan maintenance industri.
+</p>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+<div class="container text-center">
+<h2 class="text-primary mb-5">OUR SERVICES</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h4>⚡ Power Plant</h4>
+<p>Pembangkit listrik, genset, panel sinkron</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h4>🤖 PLC & Automation</h4>
+<p>SCADA, HMI, Control System</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h4>🔌 Electrical</h4>
+<p>Distribusi, Panel, Wiring</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h4>💧 Pump System</h4>
+<p>Pompa industrial & pipeline</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h4>🛠 Maintenance</h4>
+<p>Preventive & Corrective</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h4>📐 Engineering Design</h4>
+<p>AutoCAD & Industrial System</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section bg-dark" id="projects">
+<div class="container text-center">
+<h2 class="text-primary mb-5">OUR PROJECTS</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h5>Panel PLC Industry</h5>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h5>Pump Installation</h5>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card-industrial">
+<h5>Genset Power System</h5>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="section text-center" id="contact">
+<div class="container">
+<h2 class="text-primary">CONTACT US</h2>
+
+<p>📞 +62 8XXXXXXXXXX</p>
+<p>📧 hesaengineering@gmail.com</p>
+
+<a href="https://wa.me/628xxxxxxxx" class="btn btn-primary px-5 py-3 mt-3">
+Chat WhatsApp
+</a>
+
+</div>
+</section>
+
+<footer>
+<p>© 2025 — HESA Engineering Indonesia</p>
+</footer>
+
+</body>
+</html>
